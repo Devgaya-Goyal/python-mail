@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 import os
 my_mail = "devagyagoyal7564@gmail.com"
-auth_key = "kcgt pbgc pdpy pnun"
+auth_key = os.environ["auth_key"]
 st.title(" ╰(*°▽°*)╯ 📤Python Email Sender")
 
 to_addrs = st.text_input(label="Enter The receiver's EMAIL:")
